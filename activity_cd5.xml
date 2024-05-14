@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cd5">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/purple_border"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMERGENCY MESSAGE"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/emergency_numbers"
+                android:background="@drawable/purple_border"
+                android:textSize="18dp"
+                android:padding="16dp"
+
+                android:textColor="@color/black_overlay"/>
+
+
+
+
+            <EditText
+                android:id="@+id/ephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:background="@drawable/purple_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="@string/contact_number"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/deeppurple"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/edesc"
+                android:background="@drawable/purple_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="@string/enter_description"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/deeppurple"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="SEND"
+                android:id="@+id/sendButton"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>
